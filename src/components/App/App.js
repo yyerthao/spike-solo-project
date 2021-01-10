@@ -1,33 +1,22 @@
 import React, {Component} from 'react';
-import CanvasDraw from 'react-canvas-draw';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import './App.css';
-// importing Canvas from 
+// importing Canvas element
 import Canvas from 'react-canvas-draw';
-// import hook stuff 
+
 
 
 class App extends Component {
 
+  state = {
+    color: "#ffc600",
+    width: 400,
+    height: 400,
+    brushRadius: 10,
+    lazyRadius: 12
+  };
+
   render(){
-    // console.log('Rendering:', this.state);
-
-
-
-    const startDrawing = () => {
-      
-    }
-
-    const stopDrawing = () => {
-
-    }
-
-    const draw = () => {
-
-    }
-
-
-    
     return(
       <div className="App">
         <header>
@@ -40,25 +29,20 @@ class App extends Component {
           It is similiar to an img tag but without src and img tag attributes
         */}
         <Canvas
-          onMouseDown={startDrawing}
-          onMouseUp={stopDrawing}
-          onMouseMove={draw}
-        
-        
-        
+
         ></Canvas>
       </div>
     )
   }
 }
 
-ReactDOM.render(
-  <React.StrictMode>
-    {/* Added CanvasDraw */}
-    <CanvasDraw/>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// ReactDOM.render(
+//   <React.StrictMode>
+//     {/* Added CanvasDraw */}
+//     <Canvas/>
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
 
 
 export default App;

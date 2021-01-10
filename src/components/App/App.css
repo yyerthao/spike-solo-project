@@ -19,15 +19,16 @@ how-to-center-canvas-in-html5#:~:text=Centering%20the%20canvas%20
 vertically%20requires,space%20with%20the%20auto%20margins. */
 canvas {
   padding: 0;
-  margin: auto;
+  margin: 10rem auto;
   display: flex;
-  width: 300x;
-  height: 300x;
-  position: flex;
+  width: 500px;
+  height: 500px;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  border: 3px dashed rgb(102, 102, 113);
   
 }
 

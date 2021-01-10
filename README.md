@@ -37,9 +37,8 @@ Link to software that is required to install the app (e.g. node).
 10. Run `git push -u origin master` in terminal
 11. Run `Run npm install react-canvas-draw`
         (however, I ran into issues so per the git errand, I ran
-        `npm install react-canvas-draw --legacy-peer-deps`
- 
- and it worked.)
+        `npm install react-canvas-draw --legacy-peer-deps` -- 
+        and it worked.)
 
 ## Usage
 How does someone use this application? Tell a user story here.

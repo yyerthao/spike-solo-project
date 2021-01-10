@@ -18,4 +18,13 @@
  
  and it worked.)
 
-### 
+
+### Sunday to do list
+[] 
+[] 
+[] 
+[] 
+[] 
+[] 
+[] 
+[] 

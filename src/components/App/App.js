@@ -45,7 +45,7 @@ class App extends Component {
           <Router>
             <Link to="/drawpad" replace>Click to Draw Your Feelings Out</Link>
             <Route exact path="/"></Route>
-            <Route path="/drawpad" component={DrawPad}/>
+            <Route exact path="/drawpad" component={DrawPad}/>
           </Router>
           </h3>
       </div>

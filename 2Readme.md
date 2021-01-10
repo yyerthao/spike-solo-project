@@ -1,21 +1,16 @@
 
-![REPO SIZE](https://img.shields.io/github/repo-size/spike-solo-project.svg?style=flat-square)
-![TOP_LANGUAGE](https://img.shields.io/github/languages/top/spike-solo-project.svg?style=flat-square)
-![FORKS](https://img.shields.io/github/forks/spike-solo-project.svg?style=social)
+![REPO SIZE](https://img.shields.io/github/repo-size/yyerthao/spike-solo-project?style=flat-square)
+![TOP_LANGUAGE](https://img.shields.io/github/languages/top/yyerthao/spike-solo-project?style=flat-square)
+![FORKS](https://img.shields.io/github/forks/yyerthao/spike-solo-project?style=social)
 
-# PROJECT NAME
+# Spike Solo Project
 
 ## Description
 
-_Duration: 2 Week Sprint_
+_Duration: 10 Hour Code Fun_
 
-Directly above this is how long it took you to develop the project. Your project description goes here. What problem did you solve? How did you solve it? 
+Create an application which allows users to react with the DOM by drawing on the browser.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam at massa in faucibus. Etiam volutpat, risus non mollis convallis, velit nisi pulvinar mi, eu faucibus orci nisi eget nibh. Integer a velit pretium, volutpat arcu eleifend, fringilla elit. Cras erat sapien, convallis venenatis tellus vitae, feugiat dictum felis.
-
-Suspendisse euismod volutpat aliquet. Maecenas vulputate mauris in pellentesque facilisis. Phasellus varius malesuada semper. Cras sollicitudin diam mollis maximus aliquam.
-
-To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](www.heroku.com)
 
 ## Screen Shot
 
@@ -44,25 +39,22 @@ If your application has secret keys (for example --  Twilio), make sure you tell
 ## Usage
 How does someone use this application? Tell a user story here.
 
-1. xxx
-2. xxx
-3. xxx
-4. xxx
-5. xxx
-6. xxx
+1. Open in HTML browser
+2. Utilize mouse by holding down on click and dragging across browser 
+3. Let go of mouse click to release drawing
 
 
 ## Built With
 
-List technologies and frameworks here
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
-
-_Note, include this only if you have a license file. GitHub will generate one for you if you want!_
+* HTML
+* CSS 
+* JavaScript
+* React
+* React Canvas
 
 ## Acknowledgement
 Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. (Thank your people)
+Also, a big thank you to my wonderful instructor, Mary Mosman.
 
 ## Support
-If you have suggestions or issues, please email me at [youremail@whatever.com](www.google.com)
+If you have suggestions or issues, please email me at [maivyerthao@gmail.com](www.google.com)

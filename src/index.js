@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// CanvasDraw is a library of react-canvas-draw 
 import CanvasDraw from "react-canvas-draw";
 import './index.css';
 import App from '../src/components/App/App';
 import reportWebVitals from './reportWebVitals';
+import '../src/components/App/App.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <App />
+    {/* Added CanvasDraw */}
     <CanvasDraw/>
   </React.StrictMode>,
   document.getElementById('root')

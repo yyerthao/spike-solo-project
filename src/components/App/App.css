@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  font-family: 'Architects Daughter', cursive;
+  align-content: center;
 }
 
 .drawpad-link{
@@ -12,7 +14,7 @@
 }
 
 header {
-  background-color: #cccdd0;
+  background-color: #000000;
   min-height: 10vh;
   display: flex;
   flex-direction: column;

@@ -14,7 +14,8 @@ Create an application which allows users to interact with the DOM by drawing on 
 
 ## Screen Shot
 
-Include one or two screen shots of your project here (optional). Remove if unused.
+<!-- ![Canvas1.png](Canvas1.png) --> 
+<!-- Must resize image first, will return to this portion -->
 
 ### Prerequisites
 
@@ -35,9 +36,8 @@ Link to software that is required to install the app (e.g. node).
 9. Run `git commit -m 'Your commit message'`
 10. Run `git push -u origin master` in terminal
 11. Run `Run npm install react-canvas-draw`
- (however, I ran into issues so per the git errand, I ran
- 
- `npm install react-canvas-draw --legacy-peer-deps`
+        (however, I ran into issues so per the git errand, I ran
+        `npm install react-canvas-draw --legacy-peer-deps`
  
  and it worked.)
 

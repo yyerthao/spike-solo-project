@@ -1,45 +1,64 @@
 import React, {Component} from 'react';
-// import {HashRouter as Router, Route, Link} from 'react-router-dom';
+import CanvasDraw from 'react-canvas-draw';
+import ReactDOM from 'react-dom';
 import './App.css';
-// import DrawPad from '../DrawPad/DrawPad.js';
+// importing Canvas from 
+import Canvas from 'react-canvas-draw';
+// import hook stuff 
 
 
 class App extends Component {
 
-handleDelete = () => {
-  console.log('Deleted canvas');
-  
-}
-
-
-
-
-
   render(){
     // console.log('Rendering:', this.state);
+
+
+
+    const startDrawing = () => {
+      
+    }
+
+    const stopDrawing = () => {
+
+    }
+
+    const draw = () => {
+
+    }
+
+
     
     return(
       <div className="App">
         <header>
           <h1>What Makes You Happy?</h1>
         </header>
-         {/* <form>
-            <label>Name:</label>
-            <input type="text" value={this.state.name} onChange={(event) => this.handleChange(event, 'name')}/>
-            <label>Last:</label>
-            <input type="text" value={this.state.last} onChange={(event) => this.handleChange(event, 'last')}/>
-            <button onClick={this.handleClick}>Submit</button>
-          </form>  */}
           <h3 className="drawpad-link">Instructions: Grab Mouse, Click down, Drag across screen, Release when done</h3>
-          {/* <Router>
-            <Link to="/drawpad" replace>Click to Draw Your Feelings Out</Link>
-            <Route exact path="/"></Route>
-            <Route exact path="/drawpad" component={DrawPad}/>
-          </Router> */}
-          <button onClick={this.handleDelete}>Delete Drawing</button>
+        {/* Order of the the line below is important so rendering it under the h3 instructions text*/}
+        {/* Canvas can also be written as follows:
+          <Canvas id="target-id-sample" width="150" height="300"></Canvas>
+          It is similiar to an img tag but without src and img tag attributes
+        */}
+        <Canvas
+          onMouseDown={startDrawing}
+          onMouseUp={stopDrawing}
+          onMouseMove={draw}
+        
+        
+        
+        ></Canvas>
       </div>
     )
   }
 }
+
+ReactDOM.render(
+  <React.StrictMode>
+    {/* Added CanvasDraw */}
+    <CanvasDraw/>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
 
 export default App;

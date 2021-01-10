@@ -1,7 +1,10 @@
+// index.js is essentially what renders FIRST when HTML browser opens up
+// i.e. check out line 13, we are rendering our component App 
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 // CanvasDraw is a library of react-canvas-draw 
-import CanvasDraw from "react-canvas-draw";
+// import CanvasDraw from "react-canvas-draw";
 import './index.css';
 import App from '../src/components/App/App';
 import reportWebVitals from './reportWebVitals';
@@ -11,7 +14,7 @@ ReactDOM.render(
   <React.StrictMode>
       <App />
     {/* Added CanvasDraw */}
-    <CanvasDraw/>
+    {/* <CanvasDraw/> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

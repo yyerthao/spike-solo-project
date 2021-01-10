@@ -2,6 +2,7 @@
   text-align: center;
   font-family: 'Architects Daughter', cursive;
   align-content: center;
+  pointer-events: painted;
 }
 
 .drawpad-link{
@@ -13,6 +14,23 @@
 
 }
 
+/* https://stackoverflow.com/questions/5127937/
+how-to-center-canvas-in-html5#:~:text=Centering%20the%20canvas%20
+vertically%20requires,space%20with%20the%20auto%20margins. */
+canvas {
+  padding: 0;
+  margin: auto;
+  display: flex;
+  width: 300x;
+  height: 300x;
+  position: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+}
+
 header {
   background-color: #000000;
   min-height: 10vh;
@@ -22,3 +40,5 @@ header {
   justify-content: center;
   color: white;
 }
+
+

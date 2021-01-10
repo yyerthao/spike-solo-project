@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 // import ReactDOM from 'react-dom';
 import './App.css';
 // importing Canvas element
-import Canvas from 'react-canvas-draw';
+import CanvasDraw from 'react-canvas-draw';
 
 
 
@@ -10,17 +10,32 @@ class App extends Component {
 
   state = {
     color: "#ffc600",
-    width: 400,
-    height: 400,
+    width: 500,
+    height: 500,
     brushRadius: 10,
-    lazyRadius: 12
+    // helps load only necessary code when user requests for it
+    // this enables loading time to be faster upon initial upload
+    lazyRadius: 5
   };
+
+
+  componentDidMount(){
+    window.setInterval(() => {
+      this.setState({
+        // changes color randomly every 2 seconds 
+        color: "#" + Math.floor(Math.random() * 16777215).toString(16)
+      });
+    }, 2000)
+  }
 
   render(){
     return(
+
       <div className="App">
-        <header>
-          <h1>What Makes You Happy?</h1>
+        <header style={{
+          backgroundColor: this.state.color
+        }}>
+          <h1>Noodle Doodle</h1>
         </header>
           <h3 className="drawpad-link">Instructions: Grab Mouse, Click down, Drag across screen, Release when done</h3>
         {/* Order of the the line below is important so rendering it under the h3 instructions text*/}
@@ -28,9 +43,37 @@ class App extends Component {
           <Canvas id="target-id-sample" width="150" height="300"></Canvas>
           It is similiar to an img tag but without src and img tag attributes
         */}
-        <Canvas
+        {/* onChange empty arrow function just to log msg about each time brush color changes */}
+          <CanvasDraw onChange={() => console.log("Brush should change color now")}></CanvasDraw>
+        <div>
+          Random color:{" "}
+          <div
+            className="color-block"
+            style={{
+              display: "inline-block",
+              width: "24px",
+              height: "24px",
+              backgroundColor: this.state.color,
+              border: "1px solid #272727"
+            }}
+            />
+    
+     
+          <CanvasDraw brushColor={this.state.color} /> 
+        <div>
+          Random Color:{" "}
+          <div
+            style={{
+              display: "inline-block",
+              width: "24px",
+              height: "24px",
+              backgroundColor: this.state.color,
+              border: "1px solid #272727"
+            }}
+          />
+        </div>
 
-        ></Canvas>
+        </div>
       </div>
     )
   }

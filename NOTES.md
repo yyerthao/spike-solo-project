@@ -18,13 +18,12 @@
  
  and it worked.)
 
+### RESOURCES: 
+https://developer.mozilla.org/en-US/docs/Glossary/Canvas
+https://github.com/embiem/react-canvas-draw/blob/develop/demo/src/index.js
+https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial
+https://www.npmjs.com/package/react-canvas-draw
+https://www.youtube.com/watch?v=FLESHMJ-bI0 
 
-### Sunday to do list
-[] 
-[] 
-[] 
-[] 
-[] 
-[] 
-[] 
-[] 
+
+

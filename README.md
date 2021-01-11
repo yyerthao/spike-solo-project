@@ -14,7 +14,7 @@ Create an application which allows users to interact with the DOM by drawing on 
 
 ## Screen Shot
 
-<!-- ![Canvas1.png](Canvas1.png) --> 
+![canvas.png](canvas.png) 
 <!-- Must resize image first, will return to this portion -->
 
 ### Prerequisites
@@ -41,7 +41,6 @@ Link to software that is required to install the app (e.g. node).
         and it worked.)
 
 ## Usage
-How does someone use this application? Tell a user story here.
 
 1. Open in HTML browser
 2. Utilize mouse by holding down on click and dragging across browser 
@@ -54,11 +53,11 @@ How does someone use this application? Tell a user story here.
 * CSS 
 * JavaScript
 * React
-* React Canvas
+* Canvas
 
 ## Acknowledgement
-Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. (Thank your people)
-Also, a big thank you to my wonderful instructor, Mary Mosman.
+Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality.
+Also, a big thank you to my wonderful instructor, Mary Mosman and developer friend James Posey.
 
 ## Support
 If you have suggestions or issues, please email me at [maivyerthao@gmail.com](www.google.com)
